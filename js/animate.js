@@ -14,24 +14,12 @@ circle5.attr({"fill":"#ffc103", "stroke":"#ffc103"});
 var animation = '';
 
 window.onload = function() {
-    animation = window.setInterval(animateCircles, 10);  
+    animation = window.setInterval('animateCircles()', 10);  
 };
 
 
 var counter = 0; 
 function animateCircles(){
-    var pos1 = ring.getPointAtLength(counter);   //get the position (see Raphael docs)
-    var pos2 = ring.getPointAtLength(counter*2);  
-    var pos3 = ring.getPointAtLength(counter*3);  
-    var pos4 = ring.getPointAtLength(counter*4); 
-    var pos5 = ring.getPointAtLength(counter*5);  
-    circle1.attr({cx: pos1.x, cy: pos1.y, "cursor": "pointer"});  
-    circle2.attr({cx: pos2.x, cy: pos2.y, "cursor": "pointer"}); 
-    circle3.attr({cx: pos3.x, cy: pos3.y, "cursor": "pointer"});
-    circle4.attr({cx: pos4.x, cy: pos4.y, "cursor": "pointer"});
-    circle5.attr({cx: pos5.x, cy: pos5.y, "cursor": "pointer"});
-    counter++;
-
     if((ring.getTotalLength()/5) <= counter){ 
         clearInterval(animation);
         var innovation = paper.text(200, 80, "Innovation").attr({'text-anchor': 'start',  'cursor': 'pointer', 'opacity': '0', 'font-weight': 'bold'});
@@ -45,9 +33,7 @@ function animateCircles(){
         var excellence = paper.text(75, 180, "Excellence").attr({'text-anchor': 'start', 'cursor': 'pointer', 'opacity': '0', 'font-weight': 'bold'});
         var excellenceQ = paper.text(75, 205, "Efficiency\nResults\nReliability").attr({'text-anchor': 'start', 'cursor': 'pointer', 'opacity': '0'});
 
-
-
-innovation.animate({ 'opacity': '.7' }, 500, function() {
+        innovation.animate({ 'opacity': '.7' }, 500, function() {
             innovationQ.animate({ 'opacity': '.5' }, 500, function() {
                 collaboration.animate({  'opacity': '.7'}, 500, function() {
                     collaborationQ.animate({ 'opacity': '.5' }, 500, function() {
@@ -70,5 +56,17 @@ innovation.animate({ 'opacity': '.7' }, 500, function() {
     return;
 }
        
-       
+        var pos1 = ring.getPointAtLength(counter);   //get the position (see Raphael docs)
+        var pos2 = ring.getPointAtLength(counter*2);  
+        var pos3 = ring.getPointAtLength(counter*3);  
+        var pos4 = ring.getPointAtLength(counter*4); 
+        var pos5 = ring.getPointAtLength(counter*5);  
+        circle1.attr({cx: pos1.x, cy: pos1.y, "cursor": "pointer"});  
+        circle2.attr({cx: pos2.x, cy: pos2.y, "cursor": "pointer"}); 
+        circle3.attr({cx: pos3.x, cy: pos3.y, "cursor": "pointer"});
+        circle4.attr({cx: pos4.x, cy: pos4.y, "cursor": "pointer"});
+        circle5.attr({cx: pos5.x, cy: pos5.y, "cursor": "pointer"});
+        counter++;
+
+
 
