@@ -3,15 +3,15 @@ var paper = Raphael(10, 10, 600, 600);
 var ring = paper.circle(200, 200, 150);
 ring.attr({stroke:"#000", "stroke-width":5, "stroke-dasharray": "-"});
 var circle1 = paper.circle(200, 48, 16);
-circle1.attr({"fill":"yellow", "stroke":"#ffff00"}); 
+circle1.attr({"fill":"#ffc103", "stroke":"#ffc103"}); 
 var circle2 = paper.circle(200, 48, 16);
-circle2.attr({"fill":"yellow", "stroke":"#ffff00"}); 
+circle2.attr({"fill":"#ffc103", "stroke":"#ffc103"}); 
 var circle3 = paper.circle(200, 48, 16);
-circle3.attr({"fill":"yellow", "stroke":"#ffff00"}); 
+circle3.attr({"fill":"#ffc103", "stroke":"#ffc103"}); 
 var circle4 = paper.circle(200, 48, 16);
-circle4.attr({"fill":"yellow", "stroke":"#ffff00"}); 
+circle4.attr({"fill":"#ffc103", "stroke":"#ffc103"}); 
 var circle5 = paper.circle(200, 48, 16);
-circle5.attr({"fill":"yellow", "stroke":"#ffff00"});
+circle5.attr({"fill":"#ffc103", "stroke":"#ffc103"});
 
 window.onload = function() {
     animation = window.setInterval('animateCircles()', 10);  
@@ -22,8 +22,17 @@ var counter = 0;
 function animateCircles(){
     if((ring.getTotalLength()/5) <= counter){ 
         clearInterval(animation);
-                var honesty = paper.text(200, 100, "Honesty\nIntegrity\nNot Lying").attr({'text-anchor': 'start'});
-        var integrity = paper.text(380, 180, "Integrity\nCooperation\nhelpingness").attr({'text-anchor': 'start', 'cursor': 'pointer', 'opacity': '.5'});
+        var innovation = paper.text(200, 80, "Innovation").attr({'text-anchor': 'start',  'cursor': 'pointer', 'opacity': '.5', 'font-weight': 'bold'});
+        var innovation = paper.text(200, 105, "Progress\nTransformation\nInspiration").attr({'text-anchor': 'start',  'cursor': 'pointer', 'opacity': '.3'});
+        var collaboration = paper.text(360, 180, "Collaboration").attr({'text-anchor': 'start', 'cursor': 'pointer', 'opacity': '.5', 'font-weight': 'bold'});
+        var collaborationQ = paper.text(360, 205, "Teamwork\nCooperation\nSharing").attr({'text-anchor': 'start', 'cursor': 'pointer', 'opacity': '.3'});
+        var integrity = paper.text(300, 345, "Integrity").attr({'text-anchor': 'start', 'cursor': 'pointer', 'opacity': '.5', 'font-weight': 'bold'});
+        var integrityQ = paper.text(300, 370, "Ethics\nOpenness\nResponsibilty").attr({'text-anchor': 'start', 'cursor': 'pointer', 'opacity': '.5'});
+        var respect = paper.text(120, 360, "Respect").attr({'text-anchor': 'start', 'cursor': 'pointer', 'opacity': '.5', 'font-weight': 'bold'});
+        var respectQ = paper.text(120, 385, "Caring\nProtection\nSafety").attr({'text-anchor': 'start', 'cursor': 'pointer', 'opacity': '.3'});
+        var excellence = paper.text(75, 180, "Excellence").attr({'text-anchor': 'start', 'cursor': 'pointer', 'opacity': '.5', 'font-weight': 'bold'})
+        var excellenceQ = paper.text(75, 205, "Efficiency\nResults\nReliability").attr({'text-anchor': 'start', 'cursor': 'pointer', 'opacity': '.3'})
+
         circle2.node.onclick = function(){
     integrity.animate({opacity: 1}, 2000);
 };
