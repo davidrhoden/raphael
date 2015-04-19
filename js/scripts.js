@@ -1,22 +1,20 @@
-var animation;
-
-
+var animation = '';
 var paper = Raphael(10, 10, 600, 600);
 var ring = paper.circle(200, 200, 150);
 ring.attr({stroke:"#000", "stroke-width":5, "stroke-dasharray": "-"});
 var circle1 = paper.circle(200, 48, 16);
 circle1.attr({"fill":"yellow", "stroke":"#ffff00"}); 
-var circle2 = paper.circle(350, 96, 16);
-circle2.attr({"fill":"hotpink", "stroke":"#ffff00"});  
-var circle3 = paper.circle(350, 96, 16);
-circle3.attr({"fill":"orange", "stroke":"#ffff00"}); 
+var circle2 = paper.circle(200, 48, 16);
+circle2.attr({"fill":"yellow", "stroke":"#ffff00"}); 
+var circle3 = paper.circle(200, 48, 16);
+circle3.attr({"fill":"yellow", "stroke":"#ffff00"}); 
 var circle4 = paper.circle(200, 48, 16);
-circle4.attr({"fill":"purple", "stroke":"#ffff00"}); 
- var circle5 = paper.circle(350, 96, 16);
- circle5.attr({"fill":"#ff2200", "stroke":"black"}); 
+circle4.attr({"fill":"yellow", "stroke":"#ffff00"}); 
+var circle5 = paper.circle(200, 48, 16);
+circle5.attr({"fill":"yellow", "stroke":"#ffff00"});
 
 window.onload = function() {
-    animation = window.setInterval("animateCircles()", 10);  
+    animation = window.setInterval('animateCircles()', 10);  
 };
 
 
@@ -42,4 +40,4 @@ function animateCircles(){
         circle4.attr({cx: pos4.x, cy: pos4.y, "cursor": "pointer"});
         circle5.attr({cx: pos5.x, cy: pos5.y, "cursor": "pointer"});
         counter++;
- };
+ }
