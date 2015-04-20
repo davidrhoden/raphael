@@ -35,15 +35,15 @@ function animateCircles(){
     if((ring.getTotalLength()/5) <= counter){ 
         clearInterval(animation);
         var innovation = paper.text(200, 80, "Innovation").attr({'text-anchor': 'start',  'cursor': 'pointer', 'opacity': '0', 'font-weight': 'bold', 'font-size': '12'});
-        var innovationQ = paper.text(200, 105, "Progress\nTransformation\nInspiration").attr({'text-anchor': 'start',  'cursor': 'pointer', 'opacity': '0', 'font-size': '12'});
+        var innovationQ = paper.text(200, 110, "Progress\nTransformation\nInspiration").attr({'text-anchor': 'start',  'cursor': 'pointer', 'opacity': '0', 'font-size': '12'});
         var collaboration = paper.text(360, 180, "Collaboration").attr({'text-anchor': 'start', 'cursor': 'pointer', 'opacity': '0', 'font-weight': 'bold', 'font-size': '12'});
-        var collaborationQ = paper.text(360, 205, "Teamwork\nCooperation\nSharing").attr({'text-anchor': 'start', 'cursor': 'pointer', 'opacity': '0', 'font-size': '12'});
+        var collaborationQ = paper.text(360, 210, "Teamwork\nCooperation\nSharing").attr({'text-anchor': 'start', 'cursor': 'pointer', 'opacity': '0', 'font-size': '12'});
         var integrity = paper.text(300, 345, "Integrity").attr({'text-anchor': 'start', 'cursor': 'pointer', 'opacity': '0', 'font-weight': 'bold', 'font-size': '12'});
-        var integrityQ = paper.text(300, 370, "Ethics\nOpenness\nResponsibilty").attr({'text-anchor': 'start', 'cursor': 'pointer', 'opacity': '0', 'font-size': '12'});
+        var integrityQ = paper.text(300, 375, "Ethics\nOpenness\nResponsibilty").attr({'text-anchor': 'start', 'cursor': 'pointer', 'opacity': '0', 'font-size': '12'});
         var respect = paper.text(120, 360, "Respect").attr({'text-anchor': 'start', 'cursor': 'pointer', 'opacity': '0', 'font-weight': 'bold', 'font-size': '12'});
-        var respectQ = paper.text(120, 385, "Caring\nProtection\nSafety").attr({'text-anchor': 'start', 'cursor': 'pointer', 'opacity': '0', 'font-size': '12'});
+        var respectQ = paper.text(120, 390, "Caring\nProtection\nSafety").attr({'text-anchor': 'start', 'cursor': 'pointer', 'opacity': '0', 'font-size': '12'});
         var excellence = paper.text(75, 180, "Excellence").attr({'text-anchor': 'start', 'cursor': 'pointer', 'opacity': '0', 'font-weight': 'bold', 'font-size': '12'});
-        var excellenceQ = paper.text(75, 205, "Efficiency\nResults\nReliability").attr({'text-anchor': 'start', 'cursor': 'pointer', 'opacity': '0', 'font-size': '12'});
+        var excellenceQ = paper.text(75, 210, "Efficiency\nResults\nReliability").attr({'text-anchor': 'start', 'cursor': 'pointer', 'opacity': '0', 'font-size': '12'});
 
 
 
